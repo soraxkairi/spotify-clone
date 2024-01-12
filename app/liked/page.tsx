@@ -12,7 +12,15 @@ const Liked = async () => {
 
   return (
     <div 
-      className="bg-neutral-900 rounded-lg h-full w-full overflow-hidden overflow-y-auto">
+      className="
+        bg-neutral-900 
+        rounded-lg 
+        h-full 
+        w-full 
+        overflow-hidden 
+        overflow-y-auto
+      "
+    >
       <Header>
         <div className="mt-20">
           <div 

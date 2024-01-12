@@ -4,9 +4,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useSessionContext } from "@supabase/auth-helpers-react";
 import { toast } from "react-hot-toast";
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-
 import { useUser } from "@/hooks/useUsers";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import useAuthModal from "@/hooks/useAuthModal";
 
 interface LikeButtonProps {
@@ -77,7 +76,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({
         toast.error(error.message);
       } else {
         setIsLiked(true);
-        toast.success('Success');
+        toast.success('Liked succesfully');
       }
     }
 
