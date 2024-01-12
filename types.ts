@@ -61,3 +61,7 @@ export interface Subscription {
     song_path: string;
     image_path: string;
   }
+
+  export interface ProductWithPrice extends Product {
+    prices?: Price[];
+  }
